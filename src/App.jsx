@@ -71,30 +71,84 @@ function App() {
           <h2>Skills & Technologies</h2>
           <div className="skills-grid">
             <div className="skill-category">
-              <h3>Frontend</h3>
-              <div className="skill-items">
-                <span className="skill-item">HTML</span>
-                <span className="skill-item">CSS</span>
-                <span className="skill-item">JavaScript</span>
-                <span className="skill-item">React</span>
+              <h3>Frontend Development</h3>
+              <div className="skill-item">
+                <span className="skill-name">HTML</span>
+                <div className="skill-level">
+                  <div className="skill-progress" style={{width: '90%'}}></div>
+                </div>
+              </div>
+              <div className="skill-item">
+                <span className="skill-name">CSS</span>
+                <div className="skill-level">
+                  <div className="skill-progress" style={{width: '85%'}}></div>
+                </div>
+              </div>
+              <div className="skill-item">
+                <span className="skill-name">JavaScript</span>
+                <div className="skill-level">
+                  <div className="skill-progress" style={{width: '80%'}}></div>
+                </div>
+              </div>
+              <div className="skill-item">
+                <span className="skill-name">React</span>
+                <div className="skill-level">
+                  <div className="skill-progress" style={{width: '75%'}}></div>
+                </div>
               </div>
             </div>
             <div className="skill-category">
               <h3>Backend & Database</h3>
-              <div className="skill-items">
-                <span className="skill-item">MongoDB</span>
-                <span className="skill-item">MySQL</span>
-                <span className="skill-item">PostgreSQL</span>
-                <span className="skill-item">MLflow</span>
+              <div className="skill-item">
+                <span className="skill-name">MongoDB</span>
+                <div className="skill-level">
+                  <div className="skill-progress" style={{width: '70%'}}></div>
+                </div>
+              </div>
+              <div className="skill-item">
+                <span className="skill-name">MySQL</span>
+                <div className="skill-level">
+                  <div className="skill-progress" style={{width: '75%'}}></div>
+                </div>
+              </div>
+              <div className="skill-item">
+                <span className="skill-name">PostgreSQL</span>
+                <div className="skill-level">
+                  <div className="skill-progress" style={{width: '65%'}}></div>
+                </div>
+              </div>
+              <div className="skill-item">
+                <span className="skill-name">MLflow</span>
+                <div className="skill-level">
+                  <div className="skill-progress" style={{width: '60%'}}></div>
+                </div>
               </div>
             </div>
             <div className="skill-category">
               <h3>Tools & Technologies</h3>
-              <div className="skill-items">
-                <span className="skill-item">GitHub</span>
-                <span className="skill-item">WordPress</span>
-                <span className="skill-item">DVC</span>
-                <span className="skill-item">XAMPP</span>
+              <div className="skill-item">
+                <span className="skill-name">GitHub</span>
+                <div className="skill-level">
+                  <div className="skill-progress" style={{width: '85%'}}></div>
+                </div>
+              </div>
+              <div className="skill-item">
+                <span className="skill-name">WordPress</span>
+                <div className="skill-level">
+                  <div className="skill-progress" style={{width: '80%'}}></div>
+                </div>
+              </div>
+              <div className="skill-item">
+                <span className="skill-name">DVC</span>
+                <div className="skill-level">
+                  <div className="skill-progress" style={{width: '55%'}}></div>
+                </div>
+              </div>
+              <div className="skill-item">
+                <span className="skill-name">XAMPP</span>
+                <div className="skill-level">
+                  <div className="skill-progress" style={{width: '70%'}}></div>
+                </div>
               </div>
             </div>
           </div>
@@ -171,51 +225,33 @@ function App() {
         <div className="container">
           <h2>Get In Touch</h2>
           <div className="contact-content">
+            <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out if you'd like to collaborate!</p>
+            
             <div className="contact-info">
-              <h3>Let's work together!</h3>
-              <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out if you'd like to collaborate!</p>
-              <div className="contact-details">
-                <div className="contact-item">
-                  <strong>Email:</strong>
-                  <span>abdullahhashfaque@gmail.com</span>
-                </div>
-                <div className="contact-item">
-                  <strong>Phone:</strong>
-                  <span>0313-1731291</span>
-                </div>
-                <div className="contact-item">
-                  <strong>Location:</strong>
-                  <span>House 9 Street 2A, H13, Islamabad</span>
-                </div>
-                <div className="contact-item">
-                  <strong>Resume:</strong>
-                  <div className="resume-links">
-                    <a href="/webdev_resume.pdf" download className="resume-link">Web Dev Resume</a>
-                    <a href="/Black Blue Modern Professional CV Resume Template (2).pdf" download className="resume-link">Professional CV</a>
-                  </div>
-                </div>
+              <div className="contact-item">
+                <h3>Email</h3>
+                <p>abdullahhashfaque@gmail.com</p>
               </div>
-              <div className="social-links">
-                <a href="#" className="social-link">LinkedIn</a>
-                <a href="#" className="social-link">GitHub</a>
-                <a href="#" className="social-link">Twitter</a>
+              <div className="contact-item">
+                <h3>Phone</h3>
+                <p>0313-1731291</p>
+              </div>
+              <div className="contact-item">
+                <h3>Location</h3>
+                <p>House 9 Street 2A, H13, Islamabad</p>
               </div>
             </div>
-            <form className="contact-form">
-              <div className="form-group">
-                <input type="text" placeholder="Your Name" required />
-              </div>
-              <div className="form-group">
-                <input type="email" placeholder="Your Email" required />
-              </div>
-              <div className="form-group">
-                <input type="text" placeholder="Subject" required />
-              </div>
-              <div className="form-group">
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-              </div>
-              <button type="submit" className="btn btn-primary">Send Message</button>
-            </form>
+            
+            <div className="resume-links">
+              <a href="/webdev_resume.pdf" download className="resume-link">Web Dev Resume</a>
+              <a href="/Black Blue Modern Professional CV Resume Template (2).pdf" download className="resume-link">Professional CV</a>
+            </div>
+            
+            <div className="social-links">
+              <a href="#" className="social-link">LinkedIn</a>
+              <a href="#" className="social-link">GitHub</a>
+              <a href="#" className="social-link">Twitter</a>
+            </div>
           </div>
         </div>
       </section>
