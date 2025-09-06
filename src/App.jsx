@@ -22,12 +22,12 @@ function App() {
       {/* Hero Section */}
       <section id="home" className="hero">
         <div className="hero-content">
-          <h1>Hello, I'm <span className="highlight">Your Name</span></h1>
-          <h2>Full Stack Developer</h2>
-          <p>Passionate about creating amazing web experiences and solving complex problems through code.</p>
+          <h1>Hello, I'm <span className="highlight">Abdullah Ashfaque</span></h1>
+          <h2>Web Developer</h2>
+          <p>Passionate about building responsive, user-friendly websites and optimizing performance with modern technologies.</p>
           <div className="hero-buttons">
             <a href="#projects" className="btn btn-primary">View My Work</a>
-            <a href="#contact" className="btn btn-secondary">Get In Touch</a>
+            <a href="/webdev_resume.pdf" download className="btn btn-secondary">Download CV</a>
           </div>
         </div>
       </section>
@@ -39,26 +39,26 @@ function App() {
           <div className="about-content">
             <div className="about-text">
               <p>
-                I'm a passionate developer with experience in modern web technologies. 
-                I love creating user-friendly applications and learning new technologies.
+                I am a Web Developer with hands-on experience in front-end and back-end development. 
+                Skilled in HTML, CSS, JavaScript, and modern frameworks like React.
               </p>
               <p>
-                When I'm not coding, you can find me exploring new technologies, 
-                contributing to open source projects, or enjoying outdoor activities.
+                I have practical experience from my internship at Askari Bank Head Office, where I developed 
+                web-based tools and responsive websites to improve departmental workflow efficiency.
               </p>
             </div>
             <div className="about-stats">
               <div className="stat">
+                <h3>2024</h3>
+                <p>Internship at Askari Bank</p>
+              </div>
+              <div className="stat">
                 <h3>2+</h3>
-                <p>Years Experience</p>
+                <p>Major Projects</p>
               </div>
               <div className="stat">
-                <h3>10+</h3>
-                <p>Projects Completed</p>
-              </div>
-              <div className="stat">
-                <h3>5+</h3>
-                <p>Technologies</p>
+                <h3>2025</h3>
+                <p>Expected Graduation</p>
               </div>
             </div>
           </div>
@@ -73,31 +73,28 @@ function App() {
             <div className="skill-category">
               <h3>Frontend</h3>
               <div className="skill-items">
-                <span className="skill-item">React</span>
+                <span className="skill-item">HTML</span>
+                <span className="skill-item">CSS</span>
                 <span className="skill-item">JavaScript</span>
-                <span className="skill-item">HTML5</span>
-                <span className="skill-item">CSS3</span>
-                <span className="skill-item">TypeScript</span>
+                <span className="skill-item">React</span>
               </div>
             </div>
             <div className="skill-category">
-              <h3>Backend</h3>
+              <h3>Backend & Database</h3>
               <div className="skill-items">
-                <span className="skill-item">Node.js</span>
-                <span className="skill-item">Express</span>
                 <span className="skill-item">MongoDB</span>
+                <span className="skill-item">MySQL</span>
                 <span className="skill-item">PostgreSQL</span>
-                <span className="skill-item">REST APIs</span>
+                <span className="skill-item">MLflow</span>
               </div>
             </div>
             <div className="skill-category">
-              <h3>Tools & Others</h3>
+              <h3>Tools & Technologies</h3>
               <div className="skill-items">
-                <span className="skill-item">Git</span>
-                <span className="skill-item">Docker</span>
-                <span className="skill-item">AWS</span>
-                <span className="skill-item">Figma</span>
-                <span className="skill-item">Agile</span>
+                <span className="skill-item">GitHub</span>
+                <span className="skill-item">WordPress</span>
+                <span className="skill-item">DVC</span>
+                <span className="skill-item">XAMPP</span>
               </div>
             </div>
           </div>
@@ -114,16 +111,16 @@ function App() {
                 <div className="placeholder-image">Project Image</div>
               </div>
               <div className="project-content">
-                <h3>E-Commerce Platform</h3>
-                <p>A full-stack e-commerce solution built with React and Node.js, featuring user authentication, payment integration, and admin dashboard.</p>
+                <h3>Askari Bank WordPress Website</h3>
+                <p>Developed a responsive WordPress website for Askari Bank's head office using XAMPP as a local server environment. Customized themes and plugins, ensuring branding alignment, smooth navigation, and local testing before deployment.</p>
                 <div className="project-tech">
-                  <span>React</span>
-                  <span>Node.js</span>
-                  <span>MongoDB</span>
+                  <span>WordPress</span>
+                  <span>XAMPP</span>
+                  <span>PHP</span>
+                  <span>MySQL</span>
                 </div>
                 <div className="project-links">
-                  <a href="#" className="btn btn-small">Live Demo</a>
-                  <a href="#" className="btn btn-small btn-outline">GitHub</a>
+                  <a href="#" className="btn btn-small">Internal Tool</a>
                 </div>
               </div>
             </div>
@@ -133,16 +130,16 @@ function App() {
                 <div className="placeholder-image">Project Image</div>
               </div>
               <div className="project-content">
-                <h3>Task Management App</h3>
-                <p>A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.</p>
+                <h3>MLOps Web Platform</h3>
+                <p>Built a React-based web interface to integrate MLflow and DVC for machine learning model tracking and version control. Used MongoDB Atlas for cloud data storage. Developed as part of the Machine Learning Operations (MLOps) course.</p>
                 <div className="project-tech">
                   <span>React</span>
-                  <span>Socket.io</span>
-                  <span>Express</span>
+                  <span>MLflow</span>
+                  <span>DVC</span>
+                  <span>MongoDB Atlas</span>
                 </div>
                 <div className="project-links">
-                  <a href="#" className="btn btn-small">Live Demo</a>
-                  <a href="#" className="btn btn-small btn-outline">GitHub</a>
+                  <a href="#" className="btn btn-small">University Project</a>
                 </div>
               </div>
             </div>
@@ -152,16 +149,16 @@ function App() {
                 <div className="placeholder-image">Project Image</div>
               </div>
               <div className="project-content">
-                <h3>Weather Dashboard</h3>
-                <p>A responsive weather application that provides current weather data and forecasts with beautiful visualizations and location-based services.</p>
+                <h3>Internal Operations Tool</h3>
+                <p>Developed a local web-based tool for internal operations to improve departmental workflow efficiency. Designed and deployed a responsive website tailored to the needs of the GSD department at Askari Bank.</p>
                 <div className="project-tech">
+                  <span>HTML</span>
+                  <span>CSS</span>
                   <span>JavaScript</span>
-                  <span>API Integration</span>
-                  <span>CSS3</span>
+                  <span>Web Development</span>
                 </div>
                 <div className="project-links">
-                  <a href="#" className="btn btn-small">Live Demo</a>
-                  <a href="#" className="btn btn-small btn-outline">GitHub</a>
+                  <a href="#" className="btn btn-small">Internal Tool</a>
                 </div>
               </div>
             </div>
@@ -180,15 +177,22 @@ function App() {
               <div className="contact-details">
                 <div className="contact-item">
                   <strong>Email:</strong>
-                  <span>your.email@example.com</span>
+                  <span>abdullahhashfaque@gmail.com</span>
                 </div>
                 <div className="contact-item">
                   <strong>Phone:</strong>
-                  <span>+1 (555) 123-4567</span>
+                  <span>0313-1731291</span>
                 </div>
                 <div className="contact-item">
                   <strong>Location:</strong>
-                  <span>Your City, Country</span>
+                  <span>House 9 Street 2A, H13, Islamabad</span>
+                </div>
+                <div className="contact-item">
+                  <strong>Resume:</strong>
+                  <div className="resume-links">
+                    <a href="/webdev_resume.pdf" download className="resume-link">Web Dev Resume</a>
+                    <a href="/Black Blue Modern Professional CV Resume Template (2).pdf" download className="resume-link">Professional CV</a>
+                  </div>
                 </div>
               </div>
               <div className="social-links">
@@ -219,7 +223,7 @@ function App() {
       {/* Footer */}
       <footer className="footer">
         <div className="container">
-          <p>&copy; 2024 Your Name. All rights reserved.</p>
+          <p>&copy; 2024 Abdullah Ashfaque. All rights reserved.</p>
         </div>
       </footer>
     </div>
