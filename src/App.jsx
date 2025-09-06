@@ -3,11 +3,26 @@ import './App.css'
 function App() {
   return (
     <div className="app">
+      {/* Floating Particles Background */}
+      <div className="floating-particles">
+        {[...Array(20)].map((_, i) => (
+          <div
+            key={i}
+            className="particle"
+            style={{
+              left: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 15}s`,
+              animationDuration: `${15 + Math.random() * 10}s`
+            }}
+          />
+        ))}
+      </div>
+      
       {/* Header/Navigation */}
       <header className="header">
         <nav className="nav">
           <div className="logo">
-            <h2>Your Name</h2>
+            <h2>Abdullah Ashfaque</h2>
           </div>
           <ul className="nav-links">
             <li><a href="#home">Home</a></li>
