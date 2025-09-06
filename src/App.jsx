@@ -1,6 +1,51 @@
 import './App.css'
+import { useState, useEffect } from 'react'
 
 function App() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [activeSection, setActiveSection] = useState('home')
+
+  // Handle mobile menu toggle
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen)
+    // Prevent body scroll when menu is open
+    if (!isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+  }
+
+  // Handle section detection for active nav links
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ['home', 'about', 'skills', 'projects', 'contact']
+      const scrollPosition = window.scrollY + 100
+
+      for (const section of sections) {
+        const element = document.getElementById(section)
+        if (element) {
+          const offsetTop = element.offsetTop
+          const offsetHeight = element.offsetHeight
+          
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveSection(section)
+            break
+          }
+        }
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  // Close mobile menu when clicking on a link
+  const handleNavClick = () => {
+    setIsMobileMenuOpen(false)
+    document.body.style.overflow = 'unset'
+  }
+
   return (
     <div className="app">
       {/* Floating Particles Background */}
@@ -24,12 +69,43 @@ function App() {
           <div className="logo">
             <h2>Abdullah Ashfaque</h2>
           </div>
-          <ul className="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+          
+          {/* Mobile Menu Toggle */}
+          <div 
+            className={`mobile-menu-toggle ${isMobileMenuOpen ? 'active' : ''}`}
+            onClick={toggleMobileMenu}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          
+          <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
+            <li><a 
+              href="#home" 
+              className={activeSection === 'home' ? 'active' : ''}
+              onClick={handleNavClick}
+            >Home</a></li>
+            <li><a 
+              href="#about" 
+              className={activeSection === 'about' ? 'active' : ''}
+              onClick={handleNavClick}
+            >About</a></li>
+            <li><a 
+              href="#skills" 
+              className={activeSection === 'skills' ? 'active' : ''}
+              onClick={handleNavClick}
+            >Skills</a></li>
+            <li><a 
+              href="#projects" 
+              className={activeSection === 'projects' ? 'active' : ''}
+              onClick={handleNavClick}
+            >Projects</a></li>
+            <li><a 
+              href="#contact" 
+              className={activeSection === 'contact' ? 'active' : ''}
+              onClick={handleNavClick}
+            >Contact</a></li>
           </ul>
         </nav>
       </header>
