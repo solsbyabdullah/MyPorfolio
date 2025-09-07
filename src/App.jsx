@@ -374,27 +374,6 @@ function App() {
                 </div>
               </div>
             </div>
-            
-            <div className="project-card">
-              <div className="project-image">
-                <div className="placeholder-image">Project Image</div>
-              </div>
-              <div className="project-content">
-                <h3>Internal Operations Tool</h3>
-                <p>Developed a local web-based tool for internal operations to improve departmental workflow efficiency. Designed and deployed a responsive website tailored to the needs of the GSD department at Askari Bank. Managed and updated the internal portal to streamline document access and task tracking.</p>
-                <div className="project-tech">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>JavaScript</span>
-                  <span>Web Development</span>
-                </div>
-                <div className="project-links">
-                  <a href="#" className="btn btn-small">Internal Tool</a>
-                  <a href="#" className="btn btn-small">GitHub</a>
-                </div>
-              </div>
-            </div>
-            
             <div className="project-card">
               <div className="project-image">
                 <div className="placeholder-image">Project Image</div>
