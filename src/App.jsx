@@ -114,7 +114,7 @@ function App() {
       <section id="home" className="hero">
         <div className="hero-content">
           <h1>Hello, I'm <span className="highlight">Abdullah Ashfaque</span></h1>
-          <h2>Web Developer</h2>
+          <h2>Full-Stack Developer & AI/ML Enthusiast</h2>
           <p>Passionate about building responsive, user-friendly websites and optimizing performance with modern technologies.</p>
           <div className="hero-buttons">
             <a href="#projects" className="btn btn-primary">View My Work</a>
@@ -130,12 +130,15 @@ function App() {
           <div className="about-content">
             <div className="about-text">
               <p>
-                I am a Web Developer with hands-on experience in front-end and back-end development. 
-                Skilled in HTML, CSS, JavaScript, and modern frameworks like React.
+                I am a Full-Stack Developer and AI/ML enthusiast with expertise spanning web development, 
+                data analytics, blockchain technology, and machine learning. Proficient in modern frameworks 
+                like React, Unity 3D, and MLOps tools including MLflow and DVC.
               </p>
               <p>
-                I have practical experience from my internship at Askari Bank Head Office, where I developed 
-                web-based tools and responsive websites to improve departmental workflow efficiency.
+                My experience ranges from developing innovative blockchain-based platforms and predictive 
+                analytics systems to creating responsive web applications and internal business tools. 
+                I gained practical industry experience during my internship at Askari Bank Head Office, 
+                where I developed web-based solutions that improved departmental workflow efficiency.
               </p>
             </div>
             <div className="about-stats">
@@ -144,17 +147,17 @@ function App() {
                 <p>Internship at Askari Bank</p>
               </div>
               <div className="stat">
-                <h3>2+</h3>
+                <h3>8+</h3>
                 <p>Major Projects</p>
               </div>
               <div className="stat">
                 <h3>2025</h3>
                 <p>Expected Graduation</p>
               </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       {/* Skills Section */}
       <section id="skills" className="skills">
@@ -256,6 +259,87 @@ function App() {
                 <div className="placeholder-image">Project Image</div>
               </div>
               <div className="project-content">
+                <h3>CarX - Car Advertising Platform</h3>
+                <p>My Final Year Project featuring an innovative car advertising platform with 3D ad preview using Unity 3D. Integrated blockchain technology for smart contracts, implemented hate speech detection, and utilized various AI algorithms for enhanced user experience.</p>
+                <div className="project-tech">
+                  <span>Unity 3D</span>
+                  <span>Blockchain</span>
+                  <span>AI/ML</span>
+                  <span>Smart Contracts</span>
+                  <span>NLP</span>
+                </div>
+                <div className="project-links">
+                  <a href="#" className="btn btn-small">Final Year Project</a>
+                  <a href="#" className="btn btn-small">GitHub</a>
+                </div>
+              </div>
+            </div>
+            
+            <div className="project-card">
+              <div className="project-image">
+                <div className="placeholder-image">Project Image</div>
+              </div>
+              <div className="project-content">
+                <h3>Hospital Patient Wait Time Reduction</h3>
+                <p>Analyzed hospital patient flow data to identify bottlenecks and implemented a predictive model that reduced average wait times by 35%, improving patient satisfaction and operational efficiency through data-driven insights.</p>
+                <div className="project-tech">
+                  <span>Python</span>
+                  <span>Data Analytics</span>
+                  <span>Predictive Modeling</span>
+                  <span>Machine Learning</span>
+                </div>
+                <div className="project-links">
+                  <a href="#" className="btn btn-small">Healthcare Analytics</a>
+                  <a href="#" className="btn btn-small">GitHub</a>
+                </div>
+              </div>
+            </div>
+            
+            <div className="project-card">
+              <div className="project-image">
+                <div className="placeholder-image">Project Image</div>
+              </div>
+              <div className="project-content">
+                <h3>React Data Analytics Dashboard</h3>
+                <p>Developed a comprehensive data analytics dashboard using React, providing interactive visualizations and real-time data insights for business intelligence and decision-making processes.</p>
+                <div className="project-tech">
+                  <span>React</span>
+                  <span>JavaScript</span>
+                  <span>Data Visualization</span>
+                  <span>Charts.js</span>
+                </div>
+                <div className="project-links">
+                  <a href="#" className="btn btn-small">Dashboard</a>
+                  <a href="#" className="btn btn-small">GitHub</a>
+                </div>
+              </div>
+            </div>
+            
+            <div className="project-card">
+              <div className="project-image">
+                <div className="placeholder-image">Project Image</div>
+              </div>
+              <div className="project-content">
+                <h3>Timetable Scheduling System</h3>
+                <p>Built an intelligent timetable scheduling system that optimizes class schedules, resource allocation, and conflict resolution using advanced algorithms to improve academic scheduling efficiency.</p>
+                <div className="project-tech">
+                  <span>Algorithm Design</span>
+                  <span>Optimization</span>
+                  <span>Scheduling</span>
+                  <span>Database</span>
+                </div>
+                <div className="project-links">
+                  <a href="#" className="btn btn-small">Scheduling System</a>
+                  <a href="#" className="btn btn-small">GitHub</a>
+                </div>
+              </div>
+            </div>
+            
+            <div className="project-card">
+              <div className="project-image">
+                <div className="placeholder-image">Project Image</div>
+              </div>
+              <div className="project-content">
                 <h3>Askari Bank WordPress Website</h3>
                 <p>Developed a responsive WordPress website for Askari Bank's head office using XAMPP as a local server environment. Customized themes and plugins, ensuring branding alignment, smooth navigation, and local testing before deployment.</p>
                 <div className="project-tech">
@@ -265,7 +349,8 @@ function App() {
                   <span>MySQL</span>
                 </div>
                 <div className="project-links">
-                  <a href="#" className="btn btn-small">Internal Tool</a>
+                  <a href="#" className="btn btn-small">Live Demo</a>
+                  <a href="#" className="btn btn-small">GitHub</a>
                 </div>
               </div>
             </div>
@@ -285,6 +370,7 @@ function App() {
                 </div>
                 <div className="project-links">
                   <a href="#" className="btn btn-small">University Project</a>
+                  <a href="#" className="btn btn-small">GitHub</a>
                 </div>
               </div>
             </div>
@@ -295,7 +381,7 @@ function App() {
               </div>
               <div className="project-content">
                 <h3>Internal Operations Tool</h3>
-                <p>Developed a local web-based tool for internal operations to improve departmental workflow efficiency. Designed and deployed a responsive website tailored to the needs of the GSD department at Askari Bank.</p>
+                <p>Developed a local web-based tool for internal operations to improve departmental workflow efficiency. Designed and deployed a responsive website tailored to the needs of the GSD department at Askari Bank. Managed and updated the internal portal to streamline document access and task tracking.</p>
                 <div className="project-tech">
                   <span>HTML</span>
                   <span>CSS</span>
@@ -304,6 +390,27 @@ function App() {
                 </div>
                 <div className="project-links">
                   <a href="#" className="btn btn-small">Internal Tool</a>
+                  <a href="#" className="btn btn-small">GitHub</a>
+                </div>
+              </div>
+            </div>
+            
+            <div className="project-card">
+              <div className="project-image">
+                <div className="placeholder-image">Project Image</div>
+              </div>
+              <div className="project-content">
+                <h3>Personal Portfolio Website</h3>
+                <p>Modern, responsive portfolio website built with React and Vite. Features smooth animations, glass morphism design, mobile-first approach, and optimized performance. Showcases projects, skills, and professional experience with an elegant dark theme.</p>
+                <div className="project-tech">
+                  <span>React</span>
+                  <span>Vite</span>
+                  <span>CSS3</span>
+                  <span>JavaScript ES6+</span>
+                </div>
+                <div className="project-links">
+                  <a href="#" className="btn btn-small">Live Demo</a>
+                  <a href="#" className="btn btn-small">GitHub</a>
                 </div>
               </div>
             </div>
