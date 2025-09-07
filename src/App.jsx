@@ -152,7 +152,7 @@ function App() {
               </div>
               <div className="stat">
                 <h3>2025</h3>
-                <p>Expected Graduation</p>
+                <p>Graduated</p>
               </div>
               </div>
             </div>
